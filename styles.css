@@ -11,7 +11,7 @@ body {
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  background: #f8edfa;
+  background-image: linear-gradient(rgba(0, 162, 255, 0.647),rgba(0, 0, 255, 0.258));
 }
 
 h1 {
@@ -52,7 +52,7 @@ img {
   display: inline-block;
   padding: 0.8rem 1.5rem;
   color: #ffffff;
-  background-color: #f5af09;
+  background-color: #1506e0;
   cursor: pointer;
   border-radius: 0.4rem;
   font: bold 15px "Quicksand", sans-serif;
@@ -60,7 +60,7 @@ img {
 }
 
 .custom-file-input:hover {
-  background-color: #e09707;
+  background-color: rgb(2, 2, 107);
 }
 
 .btn {
@@ -108,7 +108,7 @@ button {
 }
 
 #removeBgButton:active {
-  background: #007a63;
+  background: #070707;
 }
 
 @keyframes loader {
