@@ -3,15 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Black & Blue Minimalist Modern Initial Font Logo.png"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>remove_bg</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SHEHAB R_BG</title>
   </head>
   <body>
     <div class="container">
-      <h1>Remove Background From Your Image</h1>
-      <h4>Upload your image here</h4>
-
+      <div class="nav">
+        <div class="accs">
+          <a href="https://www.facebook.com/shehab.alshbeny" target="_blank">
+            <i
+              class="fa-brands fa-facebook-f"
+              style="background-color: blue"
+            ></i>
+          </a>
+          <a href="https://github.com/shehabhany4" target="_blank">
+            <i class="fa-brands fa-github" style="background-color: black"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/shehab-hany-891a41327"
+            target="_blank"
+            ><i
+              class="fa-brands fa-linkedin-in"
+              style="background-color: rgb(9, 75, 196)"
+            ></i
+          ></a>
+          <a href="https://wa.me/201097820873" target="_blank"
+            ><i
+              class="fa-brands fa-whatsapp"
+              style="background-color: rgb(5, 168, 51)"
+            ></i
+          ></a>
+          <a
+            href="https://www.instagram.com/shehabhany4?igsh=M3hlMTdibXc4cTds&utm_source=qr"
+            target="_blank"
+            ><i
+              class="fa-brands fa-instagram"
+              style="
+                background-image: linear-gradient(
+                  rgb(215, 3, 215),
+                  rgb(255, 89, 0)
+                );
+              "
+            ></i
+          ></a>
+        </div>
+      </div>
+      <h1>Remove Background</h1>
       <form>
         <div class="img">
           <img id="uploadedImage" src="images/remove_bg .png" alt="image" />
@@ -24,14 +73,14 @@
             style="display: none"
           />
           <label id="file" for="fileInput" class="custom-file-input"
-            >Choose File</label
+            >Choose Image</label
           >
 
           <button
             type="button"
             id="removeBgButton"
             onclick="submitHandler()"
-            style="background-color: white;color: blue;border: 1px solid blue;"
+            style="background-color: white; color: blue; border: 1px solid blue"
           >
             <span class="btn__text">RemoveBG</span>
           </button>
@@ -45,7 +94,7 @@
               Cancel
             </button>
             <button
-              style="background-color: blue;"
+              style="background-color: blue"
               onclick="downloadFile()"
               id="downloadBtn"
             >
