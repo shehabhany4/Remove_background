@@ -20,30 +20,43 @@ body {
 .nav {
   width: 100%;
   height: 8vh;
-  background-color: rgba(249, 248, 248, 0.295);
+  background-color: rgba(249, 248, 248, 0.3);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 1rem 1rem;
   margin-top: 0;
 }
+
 .accs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 2vw; /* بدل ما نستعمل space-evenly، خليتها gap عشان تبقى أحسن في التوزيع */
   width: 80%;
-  height: 50px;
-  i {
-    background-color: rgb(0, 85, 255);
-    color: white;
-    font-size: 2.3em;
-    padding: 5px;
-    border-radius: 5px;
-    width: 4vw;
-    cursor: pointer;
-  }
+  height: auto;
 }
+
+.accs i {
+  background-color: rgb(0, 85, 255);
+  color: white;
+  font-size: clamp(1.5rem, 2.3vw, 2.5rem); /* متجاوب */
+  padding: 0.5em;
+  border-radius: 0.5rem;
+  width: 3rem; /* ثابتة بس متناسبة مع font-size */
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accs i:hover {
+  transform: scale(1.1);
+}
+
 
 h1 {
   font: 2rem "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif;
